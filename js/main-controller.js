@@ -1,6 +1,8 @@
 
 $(document).ready(initPage)
 
+$('.submit-btn').on('click', onContactFormSubmit)
+
 function initPage() {
     createProjs()
     renderGallery()
@@ -43,4 +45,14 @@ function renderModal() {
     $elModal.find('span').text(`${proj.publishedAt.getDate()+1}/${proj.publishedAt.getMonth()+1}/${proj.publishedAt.getFullYear()}`)
     $elModal.find('a').attr('href',`${proj.url}`)
     $elModal.find('img').attr('src',`img/portfolio/${proj.id}.jpg`)
+}
+
+function onContactFormSubmit(){
+    
+    const email = $('#inputEmail').val().trim()
+    const subj = $('#inputSubject').val().trim()
+    const msg = $('#inputMessage').val()
+
+    window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&from=${email}&to=miriamzeff@gmail.com&su=${subj}&body=${msg}`)
 }

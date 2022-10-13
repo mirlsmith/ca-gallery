@@ -33,7 +33,24 @@
     <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact -->
     <section>
-      <h4>Contact Me</h4>
+      <form class="row g-3 contact-form">
+        <h4>Contact Me</h4>
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="yourname@something.com">
+        </div>
+        <div class="col-md-6">
+          <label for="inputSubject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="inputSubject" placeholder="Type subject here">
+        </div>
+        <div class="col-12">
+          <label for="inputMessage" class="form-label">Message Body</label>
+          <textarea name="Text1" cols="40" rows="5" class="form-control" id="inputMessage" placeholder="Type message text here"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-info submit-btn">Submit</button>
+        </div>
+      </form>
     </section>
 
   </aside>
@@ -47,9 +64,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
@@ -75,50 +89,6 @@
     </div>
   </header>
 
-  <!-- Services -->
-  <a name="services"></a>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Specialities</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Portfolio Grid -->
   <section class="bg-light" id="portfolio">
@@ -184,8 +154,6 @@
   </footer>
 
   <!-- Portfolio Modal -->
-
-  <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -211,7 +179,6 @@
                   <i class="fa fa-times"></i>
                   Check it out!</button>
                   </a>
-
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
                   Close Project</button>
